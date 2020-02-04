@@ -329,7 +329,6 @@ class Encrypter
      */
     protected function updateBlockSize()
     {
-        $this->block = mcrypt_get_iv_size($this->cipher, $this->mode);
+//        Leave it empty or Mcrypt cause real pain to trace it down
     }
-    
 }
